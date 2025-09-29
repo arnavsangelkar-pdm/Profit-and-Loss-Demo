@@ -147,26 +147,6 @@ The repository includes sample P&L data files for testing:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/arnavsangelkar-pdm/Profit-and-Loss-Demo/issues) page
-2. Create a new issue with detailed information about your problem
-3. Include error messages, steps to reproduce, and your environment details
-
-## Roadmap
-
-- Support for additional file formats
-- Batch processing capabilities
-- Advanced data validation rules
-- Custom standardization templates
-- Integration with popular accounting software
-- Real-time collaboration features
 
 ## Acknowledgments
 
