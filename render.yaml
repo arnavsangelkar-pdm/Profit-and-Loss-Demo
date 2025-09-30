@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: pl-statement-cleaner
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_OPENAI_API_KEY
+        sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

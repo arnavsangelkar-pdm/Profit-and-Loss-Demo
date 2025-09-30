@@ -127,6 +127,42 @@ npm run build
 
 The build files will be located in the `build/` directory.
 
+## Deployment
+
+### Deploy to Render
+
+This application is configured for deployment on Render. Follow these steps:
+
+1. **Fork or connect your repository** to Render
+2. **Create a new Static Site** on Render
+3. **Configure the following settings:**
+   - **Build Command**: `npm install && npm run build`
+   - **Publish Directory**: `build`
+   - **Environment Variables**: Add your `REACT_APP_OPENAI_API_KEY`
+
+4. **Environment Variables Setup:**
+   ```
+   REACT_APP_OPENAI_API_KEY=your_openai_api_key_here
+   ```
+
+5. **Deploy**: Click "Create Static Site" and Render will automatically build and deploy your application
+
+### Alternative Deployment Options
+
+- **Netlify**: Use the build command `npm run build` and publish directory `build`
+- **Vercel**: Connect your GitHub repository and deploy automatically
+- **GitHub Pages**: Use the `gh-pages` package for deployment
+
+### Environment Variables for Production
+
+Ensure the following environment variables are set in your deployment platform:
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `REACT_APP_OPENAI_API_KEY` | Your OpenAI API key | Yes |
+| `REACT_APP_OPENAI_MODEL` | OpenAI model to use (default: gpt-3.5-turbo) | No |
+| `REACT_APP_OPENAI_MAX_TOKENS` | Maximum tokens for API calls (default: 2000) | No |
+
 ## Sample Data
 
 The repository includes sample P&L data files for testing:
