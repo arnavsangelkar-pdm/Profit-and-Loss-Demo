@@ -297,7 +297,7 @@ const StandardizationPanel = ({ data, onStandardize, onBack, dataStructure, init
     );
   }
 
-  const uniqueLabels = [...new Set(data.map(row => Object.values(row)[0]).filter(Boolean))];
+  const uniqueLabels = [...new Set(data.map(row => row[dataStructure.labelColumn]).filter(Boolean))];
   const validMappingsCount = Object.values(mappingRules).filter(m => m.standardLabel).length;
 
   const handleKeyDown = (e) => {
